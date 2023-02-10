@@ -1,0 +1,74 @@
+.main-container {
+  font-family: "Ubuntu", sans-serif;
+  width: 950px;
+  height: 1725px;
+  margin: 20px auto;
+}
+
+header {
+  height: 80px;
+}
+.header-menu {
+  font-size: 17px;
+  line-height: 80px;
+}
+.header-menu li {
+  position: relative;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+.header-menu-tab {
+  padding: 0 27px;
+  display: block;
+  line-height: 74px;
+  font-size: 17px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.header-menu-tab:hover {
+  background: #50597b;
+  border-bottom: 4px solid #11a8ab;
+  text-decoration: none;
+}
+.header-menu-tab .icon {
+  padding-right: 15px;
+}
+.header-menu-number {
+  position: absolute;
+  line-height: 22px;
+  padding: 0 6px;
+  font-weight: 700;
+  background: #e64c65;
+  border-radius: 100%;
+  top: 15px;
+  right: 2px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.header-menu li:hover .header-menu-number {
+  text-decoration: none;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.profile-menu {
+  float: right;
+  height: 80px;
+  padding-right: 20px;
+}
+.profile-menu p {
+  font-size: 17px;
+  display: inline-block;
+  line-height: 76px;
+  margin: 0;
+  padding-right: 10px;
+}
+.profile-menu a {
+  padding-left: 5px;
+}
+.profile-menu a:hover {
+  text-decoration: none;
+}
+.small-profile-picture {
+  display: inline-block;
+  vertical-align: middle;
+}

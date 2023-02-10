@@ -1,0 +1,191 @@
+@import url("./styles/fonts.css");
+@import url("./styles/main.css");
+@import url("./styles/containers.css");
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f253d;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+h2 {
+  font-size: 17px;
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+p,
+a,
+span {
+  color: #fff;
+}
+.scnd-font-color {
+  color: #9099b7;
+}
+
+.input-container {
+  position: relative;
+}
+input[type="text"] {
+  width: 260px;
+  height: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 45px;
+  background: #50597b;
+  color: #fff;
+  border: solid 1px #1f253d;
+  border-radius: 5px;
+}
+input[type="text"]::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+}
+input[type="text"]:-moz-input-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+}
+input[type="text"]::-moz-input-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+}
+input[type="text"]:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+}
+input[type="text"]:focus {
+  outline: none; /* removes the default orange border when focus */
+  border: 1px solid #11a8ab;
+}
+.input-icon {
+  font-size: 22px;
+  position: absolute;
+  left: 31px;
+  top: 10px;
+}
+.input-icon.password-icon {
+  left: 35px;
+}
+
+.horizontal-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.horizontal-list li {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.titular {
+  display: block;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.button {
+  display: block;
+  width: 175px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.button:hover {
+  text-decoration: none;
+}
+
+.arrow-btn-container {
+  position: relative;
+}
+.arrow-btn {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.arrow-btn:hover {
+  text-decoration: none;
+}
+.arrow-btn.left {
+  border-top-left-radius: 5px;
+}
+.arrow-btn.right {
+  border-top-right-radius: 5px;
+  right: 0;
+  top: 0;
+}
+.arrow-btn .icon {
+  display: block;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  line-height: 17px;
+  width: 21px;
+  margin: 20px auto;
+  text-align: center;
+}
+.arrow-btn.left .icon {
+  padding-right: 2px;
+}
+
+.profile-picture {
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.big-profile-picture {
+  margin: 0 auto;
+  border: 5px solid #50597b;
+  width: 150px;
+  height: 150px;
+}
+.small-profile-picture {
+  border: 2px solid #50597b;
+  width: 40px;
+  height: 40px;
+}
