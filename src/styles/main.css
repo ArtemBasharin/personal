@@ -1,8 +1,89 @@
 .main-container {
   font-family: "Ubuntu", sans-serif;
-  width: 950px;
-  height: 1725px;
+  color: #e9e9e9;
+  max-width: 1280px;
+  max-height: 100vh;
   margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.titular {
+  font-size: 20px;
+  height: 60px;
+  background: #11a8ab;
+}
+
+.inner_text {
+  margin-left: 15px;
+}
+
+.badge {
+  /* padding: 5px; */
+  height: 25px;
+  /* margin: 7px; */
+  border-radius: 3px;
+  /* background-color: #e64c65; */
+}
+
+.titular_weather {
+  background: #cc324b;
+}
+.weather .titular .icon {
+  padding-right: 15px;
+  font-size: 26px;
+}
+.weather .current-day {
+  height: 135px;
+  background: #e64c65;
+}
+.weather .current-day p {
+  margin: 0;
+  padding-left: 50px;
+}
+.current-day-date {
+  font-size: 16px;
+  padding-top: 16px;
+}
+.current-day-temperature {
+  font-size: 70px;
+}
+.current-day-temperature .icon-cloudy {
+  padding-left: 20px;
+}
+/* .weather .next-days {
+} */
+.weather .next-days p {
+  margin: 0;
+  display: inline-block;
+  font-size: 16px;
+}
+.weather .next-days a {
+  display: block;
+  line-height: 58px;
+  border-bottom: 1px solid #1f253d;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.weather .next-days a:hover {
+  background: #50597b;
+}
+.weather .next-days a:hover .day {
+  color: #e64c65;
+}
+.weather .next-days-date {
+  padding-left: 20px;
+}
+.weather .next-days-temperature {
+  float: right;
+  padding-right: 20px;
+}
+.weather .next-days-temperature .icon {
+  padding-left: 10px;
 }
 
 header {
@@ -71,4 +152,9 @@ header {
 .small-profile-picture {
   display: inline-block;
   vertical-align: middle;
+}
+
+.image-inside {
+  width: calc(100% - 20px);
+  margin: 10px;
 }

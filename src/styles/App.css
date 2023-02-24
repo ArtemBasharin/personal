@@ -1,6 +1,6 @@
-@import url("./styles/fonts.css");
-@import url("./styles/main.css");
-@import url("./styles/containers.css");
+@import url("./fonts.css");
+@import url("./main.css");
+@import url("./containers.css");
 
 * {
   -webkit-box-sizing: border-box;
@@ -12,41 +12,52 @@ body {
   background: #1f253d;
 }
 
-ul {
+.badge_container {
   list-style-type: none;
-  margin: 0;
+  margin: 7px;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
-h1 {
+.header1 {
   font-size: 23px;
 }
 
-h2 {
+.header2 {
   font-size: 17px;
 }
 
-p {
+.text {
   font-size: 15px;
 }
 
-a {
+.link {
   text-decoration: none;
   font-size: 15px;
 }
-a:hover {
+.link:hover {
   text-decoration: underline;
 }
 
-h1,
-h2,
-p,
-a,
-span {
+.text_white {
   color: #fff;
 }
-.scnd-font-color {
+
+.text_gray {
   color: #9099b7;
+}
+
+.quote {
+  color: #c9d0e4;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+.quote_author {
+  text-align: right;
+  font-size: 0.7em;
 }
 
 .input-container {
@@ -93,11 +104,6 @@ input[type="text"]:focus {
   left: 35px;
 }
 
-.horizontal-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 .horizontal-list li {
   float: left;
 }

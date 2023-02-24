@@ -4,19 +4,29 @@
   width: 300px;
 }
 .block {
-  margin-bottom: 25px;
+  width: 300px;
   background: #394264;
   border-radius: 5px;
+  position: relative;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
+
+.horizontal-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /******************************************** LEFT CONTAINER *****************************************/
-.left-container {
-}
+/* .left-container {
+} */
 .menu-box {
   height: 360px;
 }
-.menu-box .titular {
-  background: #11a8ab;
-}
+
 .menu-box-menu .icon {
   display: inline-block;
   vertical-align: top;
@@ -191,7 +201,7 @@ p.center-date {
   background: #11a8ab;
 }
 /******************************************
-                  LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
+                  LINE-CHART 
                   ******************************************/
 .grafico {
   padding: 2rem 1rem 1rem;
@@ -303,7 +313,7 @@ p.center-date {
   text-align: center;
 }
 /******************************************
-                  END LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
+                  END LINE-CHART
                   ******************************************/
 .time-lenght {
   padding-top: 22px;
@@ -513,64 +523,7 @@ p.center-date {
 .profile-options .likes {
   border-top: 4px solid #e64c65;
 }
-.weather {
-  height: 555px;
-}
-.weather .titular {
-  background: #cc324b;
-}
-.weather .titular .icon {
-  padding-right: 15px;
-  font-size: 26px;
-}
-.weather .current-day {
-  height: 135px;
-  background: #e64c65;
-}
-.weather .current-day p {
-  margin: 0;
-  padding-left: 50px;
-}
-.current-day-date {
-  font-size: 16px;
-  padding-top: 16px;
-}
-.current-day-temperature {
-  font-size: 70px;
-}
-.current-day-temperature .icon-cloudy {
-  padding-left: 20px;
-}
-.weather .next-days {
-}
-.weather .next-days p {
-  margin: 0;
-  display: inline-block;
-  font-size: 16px;
-}
-.weather .next-days a {
-  display: block;
-  line-height: 58px;
-  border-bottom: 1px solid #1f253d;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-.weather .next-days a:hover {
-  background: #50597b;
-}
-.weather .next-days a:hover .day {
-  color: #e64c65;
-}
-.weather .next-days-date {
-  padding-left: 20px;
-}
-.weather .next-days-temperature {
-  float: right;
-  padding-right: 20px;
-}
-.weather .next-days-temperature .icon {
-  padding-left: 10px;
-}
+
 .tweets {
   height: 375px;
 }
@@ -664,8 +617,8 @@ p.center-date {
   background: #cc324b;
 }
 /********************************************* RIGHT CONTAINER ****************************************/
-.right-container {
-}
+/* .right-container {
+} */
 .join-newsletter {
   height: 230px;
 }
