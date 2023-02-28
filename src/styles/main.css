@@ -32,19 +32,14 @@
 
 .titular_weather {
   background: #cc324b;
+  display: flex;
+  flex-direction: row;
 }
-.weather .titular .icon {
-  padding-right: 15px;
-  font-size: 26px;
+
+.titular_location {
+  position: relative;
 }
-.weather .current-day {
-  height: 135px;
-  background: #e64c65;
-}
-.weather .current-day p {
-  margin: 0;
-  padding-left: 50px;
-}
+
 .current-day-date {
   font-size: 16px;
   padding-top: 16px;
@@ -57,34 +52,6 @@
 }
 /* .weather .next-days {
 } */
-.weather .next-days p {
-  margin: 0;
-  display: inline-block;
-  font-size: 16px;
-}
-.weather .next-days a {
-  display: block;
-  line-height: 58px;
-  border-bottom: 1px solid #1f253d;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}
-.weather .next-days a:hover {
-  background: #50597b;
-}
-.weather .next-days a:hover .day {
-  color: #e64c65;
-}
-.weather .next-days-date {
-  padding-left: 20px;
-}
-.weather .next-days-temperature {
-  float: right;
-  padding-right: 20px;
-}
-.weather .next-days-temperature .icon {
-  padding-left: 10px;
-}
 
 header {
   height: 80px;

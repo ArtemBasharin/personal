@@ -1,6 +1,6 @@
 import React from "react";
 
-function DateGetter() {
+function DateToday() {
   const today = new Date();
   const yyyy = today.getFullYear();
   let mm = today.getMonth() + 1; // Months start at 0!
@@ -14,4 +14,4 @@ function DateGetter() {
   return <p> {formattedToday} </p>;
 }
 
-export default DateGetter;
+export default DateToday;

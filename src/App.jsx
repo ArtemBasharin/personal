@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import DateGetter from "./dateGetter";
+// import DateToday from "./dateToday";
 import "./styles/App.css";
 import avatar from "./images/avaHard.png";
+import Weather from "./Weather";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 function App() {
@@ -402,20 +403,7 @@ function App() {
         </div>
       </div> */}
 
-      <div className='block'>
-        <h2 className='titular titular_weather'>
-          <span className='icon entypo-location'></span>
-          <p></p>
-        </h2>
-        <div className='current-day'>
-          <p className='current-day-date'>
-            <DateGetter />
-          </p>
-          <p className='current-day-temperature'>
-            24º<span className='icon-cloudy'></span>
-          </p>
-        </div>
-      </div>
+      <Weather />
 
       {/* <div className='tweets block'>
         <h2 className='titular'>
