@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Weather = () => {
   const [details, setDetails] = useState(null);
+  let url = "";
+  let yourCity = "";
 
   const getUserGeolocationDetails = () =>
     fetch(
@@ -27,6 +30,24 @@ const Weather = () => {
     return formattedToday;
   }
 
+  let apiKey = "7493d26b3364019d03bf7779cd787ca0";
+  // Город погода которого нужна
+  // Формируем url для GET запроса
+
+  if (details.city !== null) {
+    yourCity = details.city;
+    url = `http://api.openweathermap.org/data/2.5/weather?q=${details.city}&lang=ru&units=metric&appid=${apiKey}`;
+  }
+
+  axios.get(url).then((res) => {
+    // Вывод температуры
+    document.querySelector(".temp").innerHTML = res.data.main.temp;
+    // Вывод влажности
+    document.querySelector(".humidity").innerHTML = res.data.main.humidity;
+    // Вывод скорости ветра
+    document.querySelector(".wind").innerHTML = res.data.wind.speed;
+  });
+
   return (
     <>
       <div className='block'>
@@ -46,6 +67,17 @@ const Weather = () => {
               </ul>
             )}
           </p>
+          <div class='weather'>
+            <p>
+              Temp: <span class='temp'></span>°C
+            </p>
+            <p>
+              Humidity: <span class='humidity'></span>%
+            </p>
+            <p>
+              Wind speed: <span class='wind'></span> км/ч
+            </p>
+          </div>
           <div className='loader'></div>
         </div>
       </div>
