@@ -55,14 +55,14 @@ function App() {
       </div>
 
       <div className='social horizontal-list block'>
-        <li className='facebook'>
+        <li className='linkedin'>
           <p className='icon'>
-            <span className='zocial-facebook'></span>
+            <span className='zocial-linkedin'></span>
           </p>
         </li>
-        <li className='twitter'>
+        <li className='github'>
           <p className='icon'>
-            <span className='zocial-twitter'></span>
+            <span className='zocial-github'></span>
           </p>
         </li>
         <li className='googleplus'>
@@ -79,6 +79,8 @@ function App() {
 
       <div className='block'>
         <h2 className='titular'>EDUCATION</h2>
+        <p className='inner_text'>Yandex.Praktikum</p>
+        <p className='inner_text quote'>Web developer</p>
         <p className='inner_text'>Siberian Transport University</p>
         <p className='inner_text quote'>Management of logistics</p>
       </div>
@@ -207,7 +209,7 @@ function App() {
 
       <div className='block'>
         <h2 className='titular'>ACHIEVEMENTS</h2>
-        <div>
+        <div className='block_achievments'>
           <img
             className='image-inside'
             src='https://www.codewars.com/users/ArtemBasharin/badges/large'
@@ -225,7 +227,10 @@ function App() {
         </div>
       </div>
 
-      <Weather />
+      <div className='block'>
+        <h2 className='titular titular_weather'>WHERE'RE YOU NOW</h2>
+        <Weather />
+      </div>
     </div>
   );
 }

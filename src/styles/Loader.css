@@ -1,8 +1,18 @@
 .loader {
+  visibility: hidden;
   animation: rotate 1s infinite;
   height: 50px;
   width: 50px;
-  position: relative;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  margin: auto;
+}
+
+.loader_visible {
+  visibility: visible;
 }
 
 .loader:before,

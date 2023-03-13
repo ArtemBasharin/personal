@@ -7,7 +7,9 @@ function Weather() {
   const apiWeatherKey = "d21939b2a613cb8cf21acd6afd167bf5";
   // const [details, setDetails] = useState(null);
   const [weatherUrl, setWeatherUrl] = useState("");
-  const [weatherIconCode, setWeatherIconCode] = useState("");
+  const [isWeatherLoading, setIsWeatherLoading] = useState(true);
+
+  // const [weatherIconCode, setWeatherIconCode] = useState("");
 
   // const getUserGeolocationDetails = () =>
   //   fetch(`https://geolocation-db.com/json/${apiLocationKey}`)
@@ -55,7 +57,8 @@ function Weather() {
   useEffect(() => {
     axios.get(weatherUrl).then((res) => {
       // Вывод температуры
-      document.querySelector(".temp").innerHTML = res.data.main.temp;
+      document.querySelector(".temp").innerHTML =
+        Math.floor(res.data.main.temp * 10) / 10 - 273;
       // Вывод влажности
       document.querySelector(".humidity").innerHTML = res.data.main.humidity;
       // Вывод скорости ветра
@@ -63,6 +66,7 @@ function Weather() {
       document.querySelector(
         ".weather_icon"
       ).src = `https://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`;
+      setIsWeatherLoading(false);
     });
   }, [weatherUrl]);
 
@@ -79,37 +83,20 @@ function Weather() {
 
   return (
     <>
-      <div className='block'>
-        <h2 className='titular titular_weather'>
-          WHERE'RE YOU NOW
-          <p className='titular_location'></p>
-        </h2>
-        <div className='block_flex'>
-          {/* <p className='current-day-date'>Today is {DateToday()}</p> */}
-          {/* <p className='current-day-date'>
-            {details && (
-              <ul className='list-group'>
-                <li className='list-group-item'>
-                  {`${details.city}, ${details.country_name}(${details.country_code})`}
-                </li>
-                <li className='list-group-item'>IP: {details.IPv4}</li>
-              </ul>
-            )}
-          </p> */}
-          <div className='weather inner_text'>
-            <p>
-              Temp: <span className='temp'></span>°C
-            </p>
-            <p>
-              Humidity: <span className='humidity'></span>%
-            </p>
-            <p>
-              Wind speed: <span className='wind'></span> км/ч
-            </p>
-          </div>
-          <img className='weather_icon' src='' alt='weather icon' />
-          {/* <div className='loader'></div> */}
+      <div className={`loader ${isWeatherLoading && "loader_visible"}`}></div>
+      <div className={`weather ${isWeatherLoading && "weather_hidden"}`}>
+        <div className='inner_text'>
+          <p>
+            Temp: <span className='temp'></span>°C
+          </p>
+          <p>
+            Humidity: <span className='humidity'></span>%
+          </p>
+          <p>
+            Wind speed: <span className='wind'></span> m/s
+          </p>
         </div>
+        <img className='weather_icon' src='' alt='weather icon' />
       </div>
     </>
   );
