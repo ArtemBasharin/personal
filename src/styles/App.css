@@ -1,3 +1,4 @@
+@import url("./normalize.css");
 @import url("./fonts.css");
 @import url("./main.css");
 @import url("./containers.css");
@@ -20,6 +21,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  justify-content: center;
 }
 
 .header1 {
@@ -55,10 +57,14 @@ body {
   text-align: left;
   font-size: 0.8em;
   line-height: 1.3em;
+  margin-top: 15px;
 }
+
 .quote_author {
   text-align: right;
   font-size: 0.7em;
+  margin-top: 10px;
+  margin-right: 7px;
 }
 
 .input-container {

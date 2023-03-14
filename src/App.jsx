@@ -55,25 +55,21 @@ function App() {
       </div>
 
       <div className='social horizontal-list block'>
-        <li className='linkedin'>
-          <p className='icon'>
-            <span className='zocial-linkedin'></span>
-          </p>
+        <li className='icon'>
+          <a className='fa fa-linkedin-square'></a>
         </li>
-        <li className='github'>
-          <p className='icon'>
-            <span className='zocial-github'></span>
-          </p>
+        <li className='icon'>
+          <a className='fa fa-github'></a>
         </li>
-        <li className='googleplus'>
-          <p className='icon'>
-            <span className='zocial-googleplus'></span>
-          </p>
+        <li className='icon'>
+          <a
+            href='https://t.me/HonestyBash'
+            className='fa fa-telegram'
+            alt='telegram'
+          ></a>
         </li>
-        <li className='mailbox'>
-          <p className='icon'>
-            <span className='fontawesome-envelope'></span>
-          </p>
+        <li className='icon'>
+          <a href='mailto:basharinaa@mail.ru' className='fa fa-envelope-o'></a>
         </li>
       </div>
 
@@ -106,11 +102,6 @@ function App() {
           <img
             className='badge'
             src='https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black'
-            alt='badge'
-          />
-          <img
-            className='badge'
-            src='https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white'
             alt='badge'
           />
           <img
@@ -175,6 +166,11 @@ function App() {
           />
           <img
             className='badge'
+            src='https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white'
+            alt='badge'
+          />
+          <img
+            className='badge'
             src='https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white'
             alt='badge'
           />
@@ -210,11 +206,13 @@ function App() {
       <div className='block'>
         <h2 className='titular'>ACHIEVEMENTS</h2>
         <div className='block_achievments'>
+          <p className='inner_text quote_author'>Codewars</p>
           <img
             className='image-inside'
             src='https://www.codewars.com/users/ArtemBasharin/badges/large'
             alt='https://www.codewars.com/users/ArtemBasharin'
           />
+          <p className='inner_text quote_author'>Leetcode</p>
           <img
             className='image-inside'
             src='https://leetcode-stats-six.vercel.app/api?username=ArtemBasharin&theme=dark'

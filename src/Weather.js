@@ -58,7 +58,7 @@ function Weather() {
     axios.get(weatherUrl).then((res) => {
       // Вывод температуры
       document.querySelector(".temp").innerHTML =
-        Math.floor(res.data.main.temp * 10) / 10 - 273;
+        Math.trunc(res.data.main.temp) - 273;
       // Вывод влажности
       document.querySelector(".humidity").innerHTML = res.data.main.humidity;
       // Вывод скорости ветра
@@ -85,15 +85,15 @@ function Weather() {
     <>
       <div className={`loader ${isWeatherLoading && "loader_visible"}`}></div>
       <div className={`weather ${isWeatherLoading && "weather_hidden"}`}>
-        <div className='inner_text'>
+        <div className='weather_description'>
           <p>
-            Temp: <span className='temp'></span>°C
+            Temp: <span className='inner_text temp'></span>°C
           </p>
           <p>
-            Humidity: <span className='humidity'></span>%
+            Humidity: <span className='inner_text humidity'></span>%
           </p>
           <p>
-            Wind speed: <span className='wind'></span> m/s
+            Wind speed: <span className='inner_text wind'></span> m/s
           </p>
         </div>
         <img className='weather_icon' src='' alt='weather icon' />
