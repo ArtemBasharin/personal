@@ -11,8 +11,8 @@
   box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
-.block_flex {
-  display: flex;
+.block_achievments {
+  height: 205px;
 }
 
 .horizontal-list {
@@ -420,38 +420,10 @@ p.center-date {
   margin: 0;
   line-height: 34px;
 }
-.left-container .social .facebook {
+.left-container .social {
   background: #3468af;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-}
-.left-container .social .facebook .number {
-  background: #1a4e95;
-  border-bottom-left-radius: 5px;
-}
-.left-container .social .twitter {
-  background: #4fc4f6;
-}
-.left-container .social .twitter .icon {
-  font-size: 18px;
-}
-.left-container .social .twitter .number {
-  background: #35aadc;
-}
-.left-container .social .googleplus {
-  background: #e64c65;
-}
-.left-container .social .googleplus .number {
-  background: #cc324b;
-}
-.left-container .social .mailbox {
-  background: #50597b;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.left-container .social .mailbox .number {
-  background: #363f61;
-  border-bottom-right-radius: 5px;
 }
 
 /************************************************** MIDDLE CONTAINER **********************************/
