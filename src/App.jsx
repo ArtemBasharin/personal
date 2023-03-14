@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 // import DateToday from "./dateToday";
 import "./styles/App.css";
 import avatar from "./images/avaHard.png";
+import habr from "./images/habr.png";
 import Weather from "./Weather";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 
@@ -56,10 +58,13 @@ function App() {
 
       <div className='social horizontal-list block'>
         <li className='icon'>
-          <a className='fa fa-linkedin-square'></a>
+          <a
+            href='https://www.linkedin.com/in/artbash/'
+            className='fa fa-linkedin-square'
+          ></a>
         </li>
         <li className='icon'>
-          <a className='fa fa-github'></a>
+          <a href='https://n' className='fa fa-github' alt='github'></a>
         </li>
         <li className='icon'>
           <a
@@ -70,6 +75,11 @@ function App() {
         </li>
         <li className='icon'>
           <a href='mailto:basharinaa@mail.ru' className='fa fa-envelope-o'></a>
+        </li>
+        <li className='icon'>
+          <a href='https://career.habr.com/artembash' alt='habr career'>
+            <img className='icon' src={habr} />
+          </a>
         </li>
       </div>
 
