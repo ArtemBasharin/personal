@@ -16,6 +16,14 @@
   padding-top: 7px;
 }
 
+.block_cert {
+  margin: 7px auto 0px 7px;
+}
+
+.block_cert:last-child {
+  margin-bottom: 7px;
+}
+
 .horizontal-list {
   margin: 0;
   padding: 0;
@@ -32,17 +40,16 @@
   height: 360px;
   padding-top: 30px;
 }
-.add-button .icon {
+.icon {
   float: right;
   line-height: 18px;
   width: 23px;
-  border: 2px solid;
-  border-radius: 100%;
+
   font-size: 18px;
   text-align: center;
   margin: 10px;
 }
-.add-button .icon:hover {
+.icon:hover {
   color: #e64c65;
   border-color: #e64c65;
 }

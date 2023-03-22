@@ -4,7 +4,8 @@ import React from "react";
 // import DateToday from "./dateToday";
 import "./styles/App.css";
 import avatar from "./images/avaHard.png";
-import habr from "./images/habr.png";
+import habr from "./images/habr.svg";
+import fcc from "./images/fcc.svg";
 import Weather from "./Weather";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 
@@ -67,18 +68,14 @@ function App() {
           <a href='https://n' className='fa fa-github' alt='github'></a>
         </li>
         <li className='icon'>
-          <a
-            href='https://t.me/HonestyBash'
-            className='fa fa-telegram'
-            alt='telegram'
-          ></a>
+          <a href='https://t.me/HonestyBash' className='fa fa-telegram'></a>
         </li>
         <li className='icon'>
           <a href='mailto:basharinaa@mail.ru' className='fa fa-envelope-o'></a>
         </li>
         <li className='icon'>
-          <a href='https://career.habr.com/artembash' alt='habr career'>
-            <img className='icon' src={habr} />
+          <a href='https://career.habr.com/artembash'>
+            <img src={habr} className='icon_habr' />
           </a>
         </li>
       </div>
@@ -232,6 +229,22 @@ function App() {
             src='https://github-readme-stackoverflow.vercel.app/?userID=17754802&theme=dark'
             alt='https://stackoverflow.com/users/17754802/artembasharin'
           /> */}
+        </div>
+      </div>
+
+      <div className='block'>
+        <h2 className='titular'>CERTIFICATION</h2>
+        <div className='block_cert'>
+          <img src={fcc} className='icon_small' />
+          <a href='https://freecodecamp.org/certification/artembash/responsive-web-design'>
+            Responsive Web-design
+          </a>
+        </div>
+        <div className='block_cert'>
+          <img src={fcc} className='icon_small' />
+          <a href='https://freecodecamp.org/certification/artembash/responsive-web-design'>
+            JS Algorithms and Data Structures
+          </a>
         </div>
       </div>
 

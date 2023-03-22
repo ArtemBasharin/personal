@@ -57,6 +57,16 @@
   /* background-color: #e64c65; */
 }
 
+.icon_habr {
+  height: 25px;
+  margin: auto;
+}
+
+.icon_small {
+  height: 12px;
+  margin-right: 7px;
+}
+
 .titular_weather {
   background: #cc324b;
   display: flex;

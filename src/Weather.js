@@ -29,6 +29,7 @@ function Weather() {
         setWeatherUrl(
           `https://api.openweathermap.org/data/2.5/weather?lat=${data.latitude}&lon=${data.longitude}&appid=${apiWeatherKey}`
         );
+        console.log(weatherUrl);
       });
   }, []);
 
