@@ -65,7 +65,7 @@ function App() {
           ></a>
         </li>
         <li className='icon'>
-          <a href='https://n' className='fa fa-github' alt='github'></a>
+          <a href='https://github.com/ArtemBasharin' className='fa fa-github' alt='github'></a>
         </li>
         <li className='icon'>
           <a href='https://t.me/HonestyBash' className='fa fa-telegram'></a>
@@ -242,7 +242,7 @@ function App() {
         </div>
         <div className='block_cert'>
           <img src={fcc} className='icon_small' />
-          <a href='https://freecodecamp.org/certification/artembash/responsive-web-design'>
+          <a href='https://www.freecodecamp.org/certification/artembash/javascript-algorithms-and-data-structures'>
             JS Algorithms and Data Structures
           </a>
         </div>
