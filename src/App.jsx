@@ -82,7 +82,7 @@ function App() {
 
       <div className='block'>
         <h2 className='titular'>EDUCATION</h2>
-        <p className='inner_text'>Yandex.Praktikum</p>
+        <p className='inner_text'>Yandex.Practikum</p>
         <p className='inner_text quote'>Web developer</p>
         <p className='inner_text'>Siberian Transport University</p>
         <p className='inner_text quote'>Management of logistics</p>
@@ -240,10 +240,18 @@ function App() {
             Responsive Web-design
           </a>
         </div>
+        
         <div className='block_cert'>
           <img src={fcc} className='icon_small' />
           <a href='https://www.freecodecamp.org/certification/artembash/javascript-algorithms-and-data-structures'>
             JS Algorithms and Data Structures
+          </a>
+        </div>
+        
+        <div className='block_cert'>
+          <img src={fcc} className='icon_small' />
+          <a href='https://www.freecodecamp.org/certification/artembash/data-visualization'>
+            Data Visualisation
           </a>
         </div>
       </div>
