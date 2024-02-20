@@ -21,7 +21,7 @@ function App() {
         </div>
         <h1 className='user-name'>Artem Basharin</h1>
         <div className='profile-description'>
-          <p className='scnd-font-color'>Web developer</p>
+          <p className='scnd-font-color'>Frontend Developer</p>
         </div>
         <div className='profile-description'>
           <p className='scnd-font-color quote'>
@@ -58,6 +58,11 @@ function App() {
       </div>
 
       <div className='social horizontal-list block'>
+        <li className='icon sign'>
+          <a href='Artem_Basharin_CV.pdf' download>
+            CV
+          </a>
+        </li>
         <li className='icon'>
           <a
             href='https://www.linkedin.com/in/artbash/'
@@ -65,7 +70,11 @@ function App() {
           ></a>
         </li>
         <li className='icon'>
-          <a href='https://github.com/ArtemBasharin' className='fa fa-github' alt='github'></a>
+          <a
+            href='https://github.com/ArtemBasharin'
+            className='fa fa-github'
+            alt='github'
+          ></a>
         </li>
         <li className='icon'>
           <a href='https://t.me/HonestyBash' className='fa fa-telegram'></a>
@@ -75,14 +84,14 @@ function App() {
         </li>
         <li className='icon'>
           <a href='https://career.habr.com/artembash'>
-            <img src={habr} className='icon_habr' />
+            <img src={habr} className='icon_habr' alt='img' />
           </a>
         </li>
       </div>
 
       <div className='block'>
         <h2 className='titular'>EDUCATION</h2>
-        <p className='inner_text'>Yandex.Practikum</p>
+        <p className='inner_text'>Yandex.Practicum</p>
         <p className='inner_text quote'>Web developer</p>
         <p className='inner_text'>Siberian Transport University</p>
         <p className='inner_text quote'>Management of logistics</p>
@@ -109,6 +118,16 @@ function App() {
           <img
             className='badge'
             src='https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black'
+            alt='badge'
+          />
+          <img
+            className='badge'
+            src='https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white'
+            alt='badge'
+          />
+          <img
+            className='badge'
+            src='https://img.shields.io/badge/D3js-F7DF1E?style=for-the-badge'
             alt='badge'
           />
           <img
@@ -235,21 +254,21 @@ function App() {
       <div className='block'>
         <h2 className='titular'>CERTIFICATION</h2>
         <div className='block_cert'>
-          <img src={fcc} className='icon_small' />
+          <img src={fcc} className='icon_small' alt='img' />
           <a href='https://freecodecamp.org/certification/artembash/responsive-web-design'>
             Responsive Web-design
           </a>
         </div>
-        
+
         <div className='block_cert'>
-          <img src={fcc} className='icon_small' />
+          <img src={fcc} className='icon_small' alt='img' />
           <a href='https://www.freecodecamp.org/certification/artembash/javascript-algorithms-and-data-structures'>
             JS Algorithms and Data Structures
           </a>
         </div>
-        
+
         <div className='block_cert'>
-          <img src={fcc} className='icon_small' />
+          <img src={fcc} className='icon_small' alt='img' />
           <a href='https://www.freecodecamp.org/certification/artembash/data-visualization'>
             Data Visualisation
           </a>
@@ -257,7 +276,7 @@ function App() {
       </div>
 
       <div className='block'>
-        <h2 className='titular titular_weather'>WHERE'RE YOU NOW</h2>
+        <h2 className='titular titular_weather'>WHERE YOU ARE NOW</h2>
         <Weather />
       </div>
     </div>

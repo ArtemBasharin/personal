@@ -36,23 +36,59 @@
 .social {
   padding: 15px;
 }
+
 .profile {
   height: 360px;
   padding-top: 30px;
 }
+
 .icon {
   float: right;
   line-height: 18px;
   width: 23px;
-
   font-size: 18px;
   text-align: center;
   margin: 10px;
 }
+
 .icon:hover {
   color: #e64c65;
   border-color: #e64c65;
 }
+
+.sign {
+  font-weight: 1000;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    font-size: 18px;
+    text-align: center;
+    color: #dee5ff;
+    animation: neon 0.08s ease-in-out infinite alternate;
+  }
+}
+
+/*-- Animation Keyframes --*/
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 50px rgba(202, 228, 225, 0.14), 0 0 32px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 50px rgba(202, 228, 225, 0.12), 0 0 42px rgba(30, 132, 242, 0.58),
+      0 0 42px rgba(30, 132, 242, 0.94), 0 0 78px rgba(30, 132, 242, 0.88),
+      0 0 100px rgba(30, 132, 242, 1);
+  }
+}
+
 .user-name {
   margin: 25px 0 16px;
   text-align: center;

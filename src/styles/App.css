@@ -123,6 +123,11 @@ input[type="text"]:focus {
   font-size: 25px;
 }
 
+.download_icon {
+  height: 25px;
+  width: auto;
+}
+
 .titular {
   display: block;
   line-height: 60px;
