@@ -84,11 +84,7 @@ function App() {
         </li>
         <li className='icon'>
           <a href='https://career.habr.com/artembash'>
-<<<<<<< Updated upstream
-            <img src={habr} className='icon_habr' alt='img' />
-=======
             <img src={habr} alt='img' className='icon_habr' />
->>>>>>> Stashed changes
           </a>
         </li>
       </div>
@@ -258,24 +254,23 @@ function App() {
       <div className='block'>
         <h2 className='titular'>CERTIFICATION</h2>
         <div className='block_cert'>
-<<<<<<< Updated upstream
-          <img src={fcc} className='icon_small' alt='img' />
-=======
           <img alt='img' src={fcc} className='icon_small' />
->>>>>>> Stashed changes
           <a href='https://freecodecamp.org/certification/artembash/responsive-web-design'>
             Responsive Web-design
           </a>
         </div>
 
         <div className='block_cert'>
-<<<<<<< Updated upstream
-          <img src={fcc} className='icon_small' alt='img' />
-=======
           <img alt='img' src={fcc} className='icon_small' />
->>>>>>> Stashed changes
           <a href='https://www.freecodecamp.org/certification/artembash/javascript-algorithms-and-data-structures'>
             JS Algorithms and Data Structures
+          </a>
+        </div>
+
+        <div className='block_cert'>
+          <img src={fcc} className='icon_small' alt='img' />
+          <a href='https://www.freecodecamp.org/certification/artembash/front-end-development-libraries'>
+            Frontend development libraries
           </a>
         </div>
 
