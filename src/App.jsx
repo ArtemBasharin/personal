@@ -102,17 +102,22 @@ function App() {
         <div className='badge_container'>
           <img
             className='badge'
-            src='https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white'
-            alt='badge'
-          />
-          <img
-            className='badge'
-            src='https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white'
-            alt='badge'
-          />
-          <img
-            className='badge'
             src='https://img.shields.io/badge/SCSS-1572B6?style=for-the-badge&logo=css3&logoColor=white'
+            alt='badge'
+          />{" "}
+          <img
+            className='badge'
+            src='https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white'
+            alt='badge'
+          />
+          <img
+            className='badge'
+            src='https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white'
+            alt='badge'
+          />
+          <img
+            className='badge'
+            src='https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white'
             alt='badge'
           />
           <img
@@ -132,21 +137,6 @@ function App() {
           />
           <img
             className='badge'
-            src='https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white'
-            alt='badge'
-          />
-          <img
-            className='badge'
-            src='https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white'
-            alt='badge'
-          />
-          <img
-            className='badge'
-            src='https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white'
-            alt='badge'
-          />
-          <img
-            className='badge'
             src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white'
             alt='badge'
           />
@@ -162,27 +152,12 @@ function App() {
           />
           <img
             className='badge'
-            src='https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white'
+            src='https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white'
             alt='badge'
           />
           <img
             className='badge'
             src='https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white'
-            alt='badge'
-          />
-          <img
-            className='badge'
-            src='https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white'
-            alt='badge'
-          />
-          <img
-            className='badge'
-            src='https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white'
-            alt='badge'
-          />
-          <img
-            className='badge'
-            src='https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white'
             alt='badge'
           />
           <img
@@ -197,7 +172,7 @@ function App() {
           />
           <img
             className='badge'
-            src='https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white'
+            src='https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white'
             alt='badge'
           />
         </div>
@@ -241,7 +216,7 @@ function App() {
           <p className='inner_text quote_author'>Leetcode</p>
           <img
             className='image-inside'
-            src='https://leetcode-stats-six.vercel.app/api?username=ArtemBasharin&theme=dark'
+            src='https://leetcard.jacoblin.cool/ArtemBasharin?theme=dark'
             alt='https://github.com/ArtemBasharin/leetcode-stats'
           />
           {/* <img
@@ -256,28 +231,28 @@ function App() {
         <div className='block_cert'>
           <img alt='img' src={fcc} className='icon_small' />
           <a href='https://freecodecamp.org/certification/artembash/responsive-web-design'>
-            Responsive Web-design
+            2021, Responsive Web-design
           </a>
         </div>
 
         <div className='block_cert'>
           <img alt='img' src={fcc} className='icon_small' />
           <a href='https://www.freecodecamp.org/certification/artembash/javascript-algorithms-and-data-structures'>
-            JS Algorithms and Data Structures
+            2021, JS Algorithms and Data Structures
           </a>
         </div>
 
         <div className='block_cert'>
           <img src={fcc} className='icon_small' alt='img' />
           <a href='https://www.freecodecamp.org/certification/artembash/front-end-development-libraries'>
-            Frontend development libraries
+            2024, Frontend development libraries
           </a>
         </div>
 
         <div className='block_cert'>
           <img src={fcc} className='icon_small' alt='img' />
           <a href='https://www.freecodecamp.org/certification/artembash/data-visualization'>
-            Data Visualisation
+            2023, Data Visualisation
           </a>
         </div>
       </div>

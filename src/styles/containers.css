@@ -18,6 +18,7 @@
 
 .block_cert {
   margin: 7px auto 0px 7px;
+  font-size: 0.8rem;
 }
 
 .block_cert:last-child {
