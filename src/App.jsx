@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-// import DateToday from "./dateToday";
 import "./styles/App.css";
 import avatar from "./images/avaHard.png";
 import habr from "./images/habr.svg";
@@ -13,9 +12,6 @@ function App() {
   return (
     <div className='main-container'>
       <div className='profile block'>
-        {/* <a className='add-button' href='#28'>
-          <span className='icon entypo-plus scnd-font-color'></span>
-        </a> */}
         <div className='profile-picture big-profile-picture clear'>
           <img alt='img' width='150px' src={avatar} />
         </div>
@@ -29,32 +25,6 @@ function App() {
           </p>
           <p className='scnd-font-color quote quote_author'>J. W. Goethe</p>
         </div>
-        {/* <ul className='profile-options horizontal-list'>
-          <li>
-            <a className='comments' href='#40'>
-              <p>
-                <span className='icon fontawesome-comment-alt scnd-font-color'></span>
-                23
-              </p>
-            </a>
-          </li>
-          <li>
-            <a className='views' href='#41'>
-              <p>
-                <span className='icon fontawesome-eye-open scnd-font-color'></span>
-                841
-              </p>
-            </a>
-          </li>
-          <li>
-            <a className='likes' href='#42'>
-              <p>
-                <span className='icon fontawesome-heart-empty scnd-font-color'></span>
-                49
-              </p>
-            </a>
-          </li>
-        </ul> */}
       </div>
 
       <div className='social horizontal-list block'>
